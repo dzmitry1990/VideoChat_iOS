@@ -1,0 +1,34 @@
+PODS:
+  - GrowingTextView (0.5.5)
+  - OpenTok (2.13.0)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - SwiftGifOrigin (1.6.1)
+  - SwiftyJSON (4.1.0)
+
+DEPENDENCIES:
+  - GrowingTextView (~> 0.5.5)
+  - OpenTok
+  - SDWebImage (~> 3.8)
+  - SwiftGifOrigin (~> 1.6.1)
+  - SwiftyJSON (~> 4.0)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - GrowingTextView
+    - OpenTok
+    - SDWebImage
+    - SwiftGifOrigin
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  GrowingTextView: 8ea0aa547c567521ab066452c12784a460ff6e8d
+  OpenTok: 9fa8d108284d751f284bf294a91c20529bde7df6
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SwiftGifOrigin: d6679d3ebe9df2e049a84bc52582635107b581f6
+  SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
+
+PODFILE CHECKSUM: 771c5f50ef3516f939b5cb30554953c9d29ea186
+
+COCOAPODS: 1.5.0

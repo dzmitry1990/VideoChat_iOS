@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SanFranciscoDisplay-Bold.otf">
+            <string>SanFranciscoDisplay-Bold</string>
+        </array>
+        <array key="SanFranciscoDisplay-Light.otf">
+            <string>SanFranciscoDisplay-Light</string>
+        </array>
+        <array key="SanFranciscoText-Bold.otf">
+            <string>SanFranciscoText-Bold</string>
+        </array>
+        <array key="SanFranciscoText-Light.otf">
+            <string>SanFranciscoText-Light</string>
+        </array>
+        <array key="SanFranciscoText-Regular.otf">
+            <string>SanFranciscoText-Regular</string>
+        </array>
+        <array key="SanFranciscoText-Semibold.otf">
+            <string>SanFranciscoText-Semibold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Video Call Controller-->
+        <scene sceneID="GWN-cv-8fl">
+            <objects>
+                <viewController storyboardIdentifier="VideoCallController" id="MN5-Bz-0OU" customClass="VideoCallController" customModule="VideoChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4lm-5a-DVY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pha-12-Qeq" customClass="RecordButton" customModule="VideoChat" customModuleProvider="target">
+                                <rect key="frame" x="151.5" y="575" width="72" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="rRU-c1-TNz"/>
+                                    <constraint firstAttribute="width" secondItem="pha-12-Qeq" secondAttribute="height" multiplier="1:1" id="vb3-au-HBi"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="startButtonTapped:" destination="MN5-Bz-0OU" eventType="touchUpInside" id="DLl-8g-jmN"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zl5-UV-f1x">
+                                <rect key="frame" x="15.5" y="590" width="120" height="42"/>
+                                <color key="backgroundColor" red="0.19607843137254902" green="0.090196078431372548" blue="0.27058823529411763" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="2oX-j9-BAM"/>
+                                    <constraint firstAttribute="width" secondItem="Zl5-UV-f1x" secondAttribute="height" multiplier="20:7" id="QLQ-q3-ZaR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="15"/>
+                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                                <state key="normal" title="Report" image="ic_report"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="reportAcction:" destination="MN5-Bz-0OU" eventType="touchUpInside" id="Adt-Pz-Hou"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="muw-r8-8jb">
+                                <rect key="frame" x="239.5" y="590" width="120" height="42"/>
+                                <color key="backgroundColor" red="0.1960784314" green="0.090196078430000007" blue="0.27058823529999998" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="Vqz-r9-3KI"/>
+                                    <constraint firstAttribute="width" secondItem="muw-r8-8jb" secondAttribute="height" multiplier="20:7" id="w0e-mq-Jj6"/>
+                                </constraints>
+                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                                <state key="normal" title="Snapchat" image="ic_snapchat"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="snapchatAction:" destination="MN5-Bz-0OU" eventType="touchUpInside" id="l3K-cL-oeP"/>
+                                </connections>
+                            </button>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VAD-5u-mi7">
+                                <rect key="frame" x="8" y="28" width="100" height="140"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="IdI-97-WFe"/>
+                                    <constraint firstAttribute="width" secondItem="VAD-5u-mi7" secondAttribute="height" multiplier="5:7" id="avL-JB-oME"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nr6-1R-z5e">
+                                <rect key="frame" x="332" y="19" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="YW4-hg-niI"/>
+                                    <constraint firstAttribute="width" constant="35" id="hy0-kd-cVf"/>
+                                </constraints>
+                                <state key="normal" image="btn_white_close"/>
+                                <connections>
+                                    <action selector="closeAction:" destination="MN5-Bz-0OU" eventType="touchUpInside" id="Yb9-3h-rgI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nXQ-Of-VWg">
+                                <rect key="frame" x="166" y="538.5" width="43" height="20.5"/>
+                                <fontDescription key="fontDescription" name="SanFranciscoText-Semibold" family="San Francisco Text" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="keb-0w-9B9">
+                                <rect key="frame" x="167" y="601.5" width="41" height="20.5"/>
+                                <fontDescription key="fontDescription" name="SanFranciscoText-Semibold" family="San Francisco Text" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v2N-6M-Wfv">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <visualEffectView opaque="NO" alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5aA-lh-4YI">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="PL5-je-Yjp">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </view>
+                                        <blurEffect style="dark"/>
+                                    </visualEffectView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sMR-OO-6sK">
+                                        <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mark_report" translatesAutoresizingMaskIntoConstraints="NO" id="eOd-Qv-KwT">
+                                                <rect key="frame" x="139" y="58" width="96" height="96"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="eOd-Qv-KwT" secondAttribute="height" multiplier="1:1" id="H4u-sc-lsp"/>
+                                                    <constraint firstAttribute="height" constant="96" id="kbH-X8-WIp"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you sure you want to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zqf-ex-Y8t">
+                                                <rect key="frame" x="42.5" y="166" width="290" height="33.5"/>
+                                                <fontDescription key="fontDescription" name="SanFranciscoDisplay-Light" family="San Francisco Display" pointSize="28"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Report this user?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZ5-4y-eUm">
+                                                <rect key="frame" x="79" y="203.5" width="217" height="33.5"/>
+                                                <fontDescription key="fontDescription" name="SanFranciscoDisplay-Bold" family="San Francisco Display" pointSize="28"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We will review your report. If the user has acted inapproriately they will be permanently banned." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KEp-rg-iAS">
+                                                <rect key="frame" x="69" y="245" width="237" height="47"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="237" id="t2f-tq-yzc"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SanFranciscoText-Light" family="San Francisco Text" pointSize="13"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lLJ-m3-g9t">
+                                                <rect key="frame" x="42" y="322" width="291" height="272"/>
+                                                <subviews>
+                                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UtH-iD-ZXi">
+                                                        <rect key="frame" x="0.0" y="0.0" width="291" height="48"/>
+                                                        <color key="backgroundColor" red="1" green="0.85098039215686272" blue="0.098039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="48" id="qfq-Ct-0j3"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="SanFranciscoText-Bold" family="San Francisco Text" pointSize="17"/>
+                                                        <state key="normal" title="Nudity">
+                                                            <color key="titleColor" white="0.0" alpha="0.85999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="12"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="nudityAction:" destination="MN5-Bz-0OU" eventType="touchUpInside" id="aoN-6L-0fU"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQp-UI-hlY">
+                                                        <rect key="frame" x="0.0" y="56" width="291" height="48"/>
+                                                        <color key="backgroundColor" red="1" green="0.85098039219999999" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="SanFranciscoText-Bold" family="San Francisco Text" pointSize="17"/>
+                                                        <state key="normal" title="Violence">
+                                                            <color key="titleColor" white="0.0" alpha="0.85999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="12"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="violenceAction:" destination="MN5-Bz-0OU" eventType="touchUpInside" id="rpO-LD-aZz"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFa-cb-gTk">
+                                                        <rect key="frame" x="0.0" y="112" width="291" height="48"/>
+                                                        <color key="backgroundColor" red="1" green="0.85098039219999999" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="SanFranciscoText-Bold" family="San Francisco Text" pointSize="17"/>
+                                                        <state key="normal" title="Threatening">
+                                                            <color key="titleColor" white="0.0" alpha="0.85999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="12"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="threateningAction:" destination="MN5-Bz-0OU" eventType="touchUpInside" id="qVw-1b-d1U"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDZ-se-3mt">
+                                                        <rect key="frame" x="0.0" y="168" width="291" height="48"/>
+                                                        <color key="backgroundColor" red="1" green="0.85098039219999999" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="SanFranciscoText-Bold" family="San Francisco Text" pointSize="17"/>
+                                                        <state key="normal" title="Harrassing">
+                                                            <color key="titleColor" white="0.0" alpha="0.85999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="12"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="harrassingAction:" destination="MN5-Bz-0OU" eventType="touchUpInside" id="cvb-TB-I95"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSx-Io-8yI">
+                                                        <rect key="frame" x="0.0" y="224" width="291" height="48"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.25" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="17"/>
+                                                        <state key="normal" title="Cancel">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="12"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="cancelAction:" destination="MN5-Bz-0OU" eventType="touchUpInside" id="65D-wi-VcT"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="291" id="Jdk-w3-kZL"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="eOd-Qv-KwT" firstAttribute="centerX" secondItem="sMR-OO-6sK" secondAttribute="centerX" id="3Zc-Gl-hiE"/>
+                                            <constraint firstItem="zqf-ex-Y8t" firstAttribute="top" secondItem="eOd-Qv-KwT" secondAttribute="bottom" constant="12" id="CGF-oq-hbk"/>
+                                            <constraint firstItem="lLJ-m3-g9t" firstAttribute="top" secondItem="KEp-rg-iAS" secondAttribute="bottom" constant="30" id="HpG-42-n3l"/>
+                                            <constraint firstItem="zqf-ex-Y8t" firstAttribute="centerX" secondItem="sMR-OO-6sK" secondAttribute="centerX" id="KYl-uQ-puf"/>
+                                            <constraint firstItem="KEp-rg-iAS" firstAttribute="centerX" secondItem="sMR-OO-6sK" secondAttribute="centerX" id="RDz-gD-bq4"/>
+                                            <constraint firstItem="eOd-Qv-KwT" firstAttribute="top" secondItem="sMR-OO-6sK" secondAttribute="top" constant="58" id="hVZ-QK-Yh4"/>
+                                            <constraint firstItem="LZ5-4y-eUm" firstAttribute="top" secondItem="zqf-ex-Y8t" secondAttribute="bottom" constant="4" id="mAf-MX-y0p"/>
+                                            <constraint firstItem="lLJ-m3-g9t" firstAttribute="centerX" secondItem="sMR-OO-6sK" secondAttribute="centerX" id="mby-fu-xKD"/>
+                                            <constraint firstItem="KEp-rg-iAS" firstAttribute="top" secondItem="LZ5-4y-eUm" secondAttribute="bottom" constant="8" id="ta4-cM-nUM"/>
+                                            <constraint firstItem="LZ5-4y-eUm" firstAttribute="centerX" secondItem="sMR-OO-6sK" secondAttribute="centerX" id="vdX-yX-1Ac"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.14901960780000001" green="0.01176470588" blue="0.25098039220000001" alpha="0.75" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="sMR-OO-6sK" firstAttribute="leading" secondItem="v2N-6M-Wfv" secondAttribute="leading" id="6hL-KA-wcv"/>
+                                    <constraint firstAttribute="trailing" secondItem="5aA-lh-4YI" secondAttribute="trailing" id="JqG-NP-Iow"/>
+                                    <constraint firstItem="5aA-lh-4YI" firstAttribute="leading" secondItem="v2N-6M-Wfv" secondAttribute="leading" id="OPB-mn-eh6"/>
+                                    <constraint firstItem="5aA-lh-4YI" firstAttribute="top" secondItem="v2N-6M-Wfv" secondAttribute="top" id="fRS-zG-vPH"/>
+                                    <constraint firstAttribute="bottom" secondItem="5aA-lh-4YI" secondAttribute="bottom" id="p3W-Gg-8BF"/>
+                                    <constraint firstAttribute="bottom" secondItem="sMR-OO-6sK" secondAttribute="bottom" id="s2J-7Q-UPA"/>
+                                    <constraint firstAttribute="trailing" secondItem="sMR-OO-6sK" secondAttribute="trailing" id="vbP-t7-UFB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.14901960784313725" green="0.011764705882352941" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="VAD-5u-mi7" firstAttribute="top" secondItem="JuI-CT-D0Y" secondAttribute="top" constant="8" id="0zJ-kY-oTD"/>
+                            <constraint firstAttribute="trailing" secondItem="v2N-6M-Wfv" secondAttribute="trailing" id="2DB-i5-Yg2"/>
+                            <constraint firstItem="pha-12-Qeq" firstAttribute="centerX" secondItem="4lm-5a-DVY" secondAttribute="centerX" id="3Qc-Tw-vVA"/>
+                            <constraint firstItem="muw-r8-8jb" firstAttribute="centerY" secondItem="pha-12-Qeq" secondAttribute="centerY" id="NVF-eZ-SRZ"/>
+                            <constraint firstItem="pha-12-Qeq" firstAttribute="top" secondItem="nXQ-Of-VWg" secondAttribute="bottom" constant="16" id="OBl-ZP-RtT"/>
+                            <constraint firstItem="pha-12-Qeq" firstAttribute="leading" secondItem="Zl5-UV-f1x" secondAttribute="trailing" constant="16" id="R1R-qP-diF"/>
+                            <constraint firstItem="v2N-6M-Wfv" firstAttribute="top" secondItem="4lm-5a-DVY" secondAttribute="top" id="SZ1-x7-Mq5"/>
+                            <constraint firstItem="JuI-CT-D0Y" firstAttribute="trailing" secondItem="nr6-1R-z5e" secondAttribute="trailing" constant="8" id="UeS-a1-had"/>
+                            <constraint firstItem="keb-0w-9B9" firstAttribute="centerY" secondItem="pha-12-Qeq" secondAttribute="centerY" id="Vuy-7E-9hv"/>
+                            <constraint firstItem="Zl5-UV-f1x" firstAttribute="centerY" secondItem="pha-12-Qeq" secondAttribute="centerY" id="bNS-dX-kwV"/>
+                            <constraint firstItem="nXQ-Of-VWg" firstAttribute="centerX" secondItem="pha-12-Qeq" secondAttribute="centerX" id="c0m-Bd-GNH"/>
+                            <constraint firstItem="JuI-CT-D0Y" firstAttribute="bottom" secondItem="pha-12-Qeq" secondAttribute="bottom" constant="20" id="dvI-mS-z54"/>
+                            <constraint firstAttribute="bottom" secondItem="v2N-6M-Wfv" secondAttribute="bottom" id="e2X-gB-z8l"/>
+                            <constraint firstItem="muw-r8-8jb" firstAttribute="leading" secondItem="pha-12-Qeq" secondAttribute="trailing" constant="16" id="hbo-rd-Uo8"/>
+                            <constraint firstItem="JuI-CT-D0Y" firstAttribute="top" secondItem="nr6-1R-z5e" secondAttribute="top" constant="1" id="itP-xS-0hw"/>
+                            <constraint firstItem="v2N-6M-Wfv" firstAttribute="leading" secondItem="4lm-5a-DVY" secondAttribute="leading" id="kR8-bv-gXB"/>
+                            <constraint firstItem="VAD-5u-mi7" firstAttribute="leading" secondItem="JuI-CT-D0Y" secondAttribute="leading" constant="8" id="or3-gK-Qca"/>
+                            <constraint firstItem="VAD-5u-mi7" firstAttribute="width" secondItem="4lm-5a-DVY" secondAttribute="width" multiplier="100:375" id="t4v-X0-q0E"/>
+                            <constraint firstItem="keb-0w-9B9" firstAttribute="centerX" secondItem="pha-12-Qeq" secondAttribute="centerX" id="tWB-6U-Rcd"/>
+                            <constraint firstItem="sMR-OO-6sK" firstAttribute="top" secondItem="JuI-CT-D0Y" secondAttribute="top" id="yPp-aC-CtL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JuI-CT-D0Y"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnCall" destination="pha-12-Qeq" id="NFs-SH-vtk"/>
+                        <outlet property="btnReport" destination="Zl5-UV-f1x" id="4af-tc-jl4"/>
+                        <outlet property="btnSnapchat" destination="muw-r8-8jb" id="BiW-mT-dRJ"/>
+                        <outlet property="lblCount" destination="keb-0w-9B9" id="Y4U-68-C60"/>
+                        <outlet property="lblState" destination="nXQ-Of-VWg" id="g6e-c8-FzP"/>
+                        <outlet property="reportView" destination="v2N-6M-Wfv" id="Yxc-PB-FkA"/>
+                        <outlet property="sellerView" destination="VAD-5u-mi7" id="JE0-RZ-RUE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gtS-HE-V9B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-370.39999999999998" y="168.6656671664168"/>
+        </scene>
+        <!--Report View Controller-->
+        <scene sceneID="u76-tW-VZf">
+            <objects>
+                <viewController storyboardIdentifier="ReportViewController" id="wtI-Tr-diP" customClass="ReportViewController" customModule="VideoChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="72O-Wm-JB5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hrd-3Y-yVN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="hHK-Qc-ym2">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ESa-3t-8pm">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mark_report" translatesAutoresizingMaskIntoConstraints="NO" id="7X1-rs-hus">
+                                        <rect key="frame" x="139.5" y="58" width="96" height="96"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="96" id="Syc-wf-kDU"/>
+                                            <constraint firstAttribute="width" secondItem="7X1-rs-hus" secondAttribute="height" multiplier="1:1" id="c1l-cV-fOP"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="7X1-rs-hus" firstAttribute="top" secondItem="ESa-3t-8pm" secondAttribute="top" constant="58" id="ZC7-jl-frA"/>
+                                    <constraint firstItem="7X1-rs-hus" firstAttribute="centerX" secondItem="ESa-3t-8pm" secondAttribute="centerX" id="oJK-YK-DkM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.14901960784313725" green="0.011764705882352941" blue="0.25098039215686274" alpha="0.75" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="zyH-hw-fnL" firstAttribute="bottom" secondItem="ESa-3t-8pm" secondAttribute="bottom" id="7VI-PO-amS"/>
+                            <constraint firstItem="Hrd-3Y-yVN" firstAttribute="top" secondItem="72O-Wm-JB5" secondAttribute="top" id="B9M-Z7-aSI"/>
+                            <constraint firstItem="Hrd-3Y-yVN" firstAttribute="bottom" secondItem="zyH-hw-fnL" secondAttribute="bottom" id="CA7-ie-2nX"/>
+                            <constraint firstItem="zyH-hw-fnL" firstAttribute="trailing" secondItem="ESa-3t-8pm" secondAttribute="trailing" id="HnE-FJ-jt1"/>
+                            <constraint firstItem="ESa-3t-8pm" firstAttribute="leading" secondItem="zyH-hw-fnL" secondAttribute="leading" id="OKv-Bi-Vjb"/>
+                            <constraint firstItem="ESa-3t-8pm" firstAttribute="top" secondItem="zyH-hw-fnL" secondAttribute="top" id="gdy-hI-WHT"/>
+                            <constraint firstItem="Hrd-3Y-yVN" firstAttribute="leading" secondItem="72O-Wm-JB5" secondAttribute="leading" id="mw0-GM-OIT"/>
+                            <constraint firstAttribute="trailing" secondItem="Hrd-3Y-yVN" secondAttribute="trailing" id="uhx-Wv-ze5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zyH-hw-fnL"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l0s-co-H8Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="373.60000000000002" y="171.36431784107947"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btn_white_close" width="12" height="12"/>
+        <image name="ic_report" width="20" height="20"/>
+        <image name="ic_snapchat" width="20" height="20"/>
+        <image name="mark_report" width="100" height="100"/>
+    </resources>
+</document>
